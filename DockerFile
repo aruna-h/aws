@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD dockerProj-0.0.1-SNAPSHOT.war dockerProj-0.0.1-SNAPSHOT.war
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "dockerProj-0.0.1-SNAPSHOT.war"]
